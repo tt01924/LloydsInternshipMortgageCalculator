@@ -1,27 +1,72 @@
 .App {
-  text-align: center;
+  background-color: #61dafb;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin, if any */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 8vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
+  background-color: #674ca9;
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  justify-content: space-between; /* Distribute space between items */
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.8);
+}
+
+.calculator p {
+  width: 45%; /* Each <p> takes 45% of the row width */
+  margin: 10px 0; /* Add spacing between rows */
+  text-align: center; /* Center text inside <p> */
+}
+
+h1 {
+
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+p {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0; /* Spacing between rows */
+  width: 45%; /* Each row takes up 45% width */
+}
+
+.input {
+  width: 100%; /* Full width inside the row */
+  padding: 10px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light gray border */
+  font-size: 16px; /* Make input text readable */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .App-link {
