@@ -45,26 +45,35 @@
 }
 
 p {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(5px + 2vmin);
   color: white;
   text-decoration: underline;
 }
 
+.results {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
 .loan {
-  text-decoration:none;
+  text-decoration: none;
+
 }
 
 .row {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 15px 0; /* Spacing between rows */
-  width: 45%; /* Each row takes up 45% width */
+  /* justify-content: center; */
+  margin: 15px 0; 
+  /* width: 45%;  */
 }
 
 .input select {

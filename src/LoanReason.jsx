@@ -28,6 +28,8 @@ const LoanReason = ({ onInterestRateChange }) => {
         rate = ''; // Clear if no valid option is selected
     }
 
+    console.log(`Selected loan reason: ${selectedReason}, interest rate: ${rate}`);
+    
     // Pass the calculated interest rate back to the parent
     onInterestRateChange(rate);
   };
