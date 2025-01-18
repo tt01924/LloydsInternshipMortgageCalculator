@@ -34,7 +34,7 @@ const LoanReason = ({ onInterestRateChange }) => {
 
   return (
     <div className="row">
-      <p>Reason for loan:</p>
+      <p>1. Reason for loan:</p>
       <select onChange={handleLoanReasonChange}>
         <option value=''>Please select</option>
         <option>Basic Mortgage</option>

@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import LoanReason from './LoanReason';
+import BorrowAmount from './BorrowAmount';
 import './App.css';
 
 function App() {
-  const [interestRate, setInterestRate] = useState();
+  const [interestRate, setInterestRate] = useState('');
+  const [borrowAmount, setBorrowAmount] = useState('');
 
   const handleInterestRateChange = (rate) => {
     setInterestRate(rate);
+  };
+  
+  const handleBorrowAmountChange = (amount) => {
+    setBorrowAmount(amount);
   };
 
   
@@ -24,15 +30,10 @@ function App() {
         {/* Loan Reason Component */}
         <LoanReason onInterestRateChange={handleInterestRateChange} />
 
-        <div className="row">
-          <p>Income:</p>
-          <input type="text" className="input" placeholder='Per year'/>
-        </div>
+        {/* Borrow Amount Component */}
+        <BorrowAmount onBorrowAmountChange={handleBorrowAmountChange} />
 
-        <div className="row">
-          <p>Deposit:</p>
-          <input type="text" className="input" placeholder='£'/>
-        </div>
+
 
         <div className="row">
           <p>Repayment period:</p>
@@ -47,23 +48,28 @@ function App() {
         </div>
 
         <div className="row">
+          <p>Est. monthly repayments:</p>
+          <input type="text" className="input" placeholder='£'/>
+        </div>
+
+
+
+        <div className="row">
+          <p>Property price:</p>
+          <input type="text" className="input" placeholder='£' />
+        </div>
+        
+        <div className='results'>
+
+        <div className="row">
           <p>Average interest rate:</p>
           <p className='loan'>{interestRate || 'Please select a loan'}</p>
         </div>
 
         <div className="row">
-          <p>Est. monthly repayments:</p>
-          <input type="text" className="input" placeholder='£'/>
-        </div>
-
-        <div className="row">
           <p>Est. borrow amount:</p>
-          <input type="text" className="input" placeholder='£'/>
+          <p className='loan'>{borrowAmount || 'Please input your household income'}</p>
         </div>
-
-        <div className="row">
-          <p>Property price:</p>
-          <input type="text" className="input" placeholder='£' />
         </div>
       </div>
     </div>
