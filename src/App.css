@@ -20,6 +20,7 @@
 
 .calculator {
   background-color: #674ca9;
+  color: white;
   height: 80%;
   width: 60%;
   padding: 20px;
@@ -36,12 +37,12 @@
   text-align: center; /* Center text inside <p> */
 }
 
-.calculator h1 {
-
+h2 {
   text-align: center;
   justify-content: center;
   color: white;
   margin-bottom: 20px;
+
 }
 
 p {
@@ -62,6 +63,7 @@ p {
   font-size: calc(5px + 2vmin);
   color: white;
 }
+
 .loan {
   text-decoration: none;
 

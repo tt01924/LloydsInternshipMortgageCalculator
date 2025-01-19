@@ -49,6 +49,9 @@ function App() {
         interestRate={interestRate} />
         
         <div className='results'>
+        <h2>
+          Results:
+        </h2>
 
         <div className="row">
           <p>Average interest rate:</p>
@@ -59,7 +62,7 @@ function App() {
 
         <div className="row">
           <p>Est. borrow amount:</p>
-          <p className='loan'>{borrowAmount || 'Please input your household income'}</p>
+          <p className="loan">{borrowAmount ? `£${parseFloat(borrowAmount).toFixed(2)}` : 'Please input your household income'}</p>
         </div>
 
         <div className="row">
