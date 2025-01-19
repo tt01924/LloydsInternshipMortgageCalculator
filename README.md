@@ -73,4 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # TO DO:
 Mobile, laptop, tablet styling
-Functioning monthly repayment generator
