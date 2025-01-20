@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
-import LoanReason from './LoanReason';
-import BorrowAmount from './BorrowAmount';
-import MonthlyRepayment from './MonthlyRepayment';
+import LoanReason from './components/LoanReason';
+import BorrowAmount from './components/BorrowAmount';
+import MonthlyRepayment from './components/MonthlyRepayment';
 import './App.css';
 
 function App() {
